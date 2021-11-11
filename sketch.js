@@ -36,7 +36,11 @@ function draw() {
     paddle.y=paddle.y+20;
   }
   drawSprites();
-  
+  if(ball.x>400){
+    fill(255);
+    textSize(20);
+    text("Game Over",150,200)
+  }
 }
 
 function explosion()
